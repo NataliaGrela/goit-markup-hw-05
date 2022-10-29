@@ -97,24 +97,42 @@ body {
   letter-spacing: 0.02em;
   color: var(--brand-color);
   margin-left: 10px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
-.menu-item-five:hover {
+.menu-item-five:hover,
+.menu-item-five:focus {
   color: var(--item-color);
 }
 
-.contact-icon:hover,
+/* .contact-icon:hover,
 .contact-icon:focus {
   fill: var(--item-color);
-}
+} */
 
 .contact-icon {
   cursor: pointer;
   fill: #757575;
 }
 
-.menu-item-five:focus {
-  color: var(--item-color);
+.icon {
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.contact-icon-envelope {
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item-five:hover .icon,
+.menu-item-five:focus .icon {
+  fill: var(--item-color);
 }
 
 .menu-item-six {
@@ -124,14 +142,26 @@ body {
   letter-spacing: 0.02em;
   color: var(--brand-color);
   margin-left: 10px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
-.menu-item-six:hover {
+.contact-icon-phone {
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item-six:hover,
+.menu-item-six:focus  {
   color: var(--item-color);
 }
 
-.menu-item-six:focus {
-  color: var(--item-color);
+.menu-item-six:hover .icon,
+.menu-item-six:focus .icon {
+  fill: var(--item-color);
 }
 
 .menu-color {
@@ -146,12 +176,12 @@ a:link {
   text-decoration: underline;
 }
 
-.contact {
+/* .contact {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
-}
+} */
 
 .container-footer {
   min-width: 1200px;
@@ -298,6 +328,7 @@ a.footer-contact {
 .social-link-footer:focus {
   background-color: var(--item-color);
 }
+
 .title-color {
   min-width: 1200px;
   background: #2f303a;
@@ -690,10 +721,10 @@ li > .name-description {
   fill: #afb1b8;
 }
 
-.social-icon:hover,
+/* .social-icon:hover,
 .social-icon:focus {
   fill: white;
-}
+} */
 
 .social-link {
   display: flex;
@@ -709,6 +740,11 @@ li > .name-description {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--item-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: white;
 }
 
 .gap {
