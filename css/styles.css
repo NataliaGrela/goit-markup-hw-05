@@ -206,7 +206,7 @@ a:link {
   margin-right: 70px;
 }
 
-.foot-name {
+.footer-name {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -216,22 +216,26 @@ a:link {
   color: var(--item-color);
 }
 
-.foot-name:hover,
-.foot-name:focus {
-  color: rgb(118, 164, 207);
-  transition: all 2s;
+.footer-name:hover,
+.footer-name:focus {
+  color: var(--link-color);
 }
 
-.foot-menu-color {
+.footer-name:hover .footer-menu-color,
+.footer-name:focus .footer-menu-color {
+ color: var(--link-color);
+}
+
+.footer-menu-color {
   color: #ffffff;
 }
 
-.foot-menu-color:hover,
-.foot-menu-color:focus {
-  color: rgb(118, 164, 207);
+.footer-menu-color:hover,
+.footer-menu-color:focus {
+  color: var(--link-color);
 }
 
-.foot-data {
+.footer-data {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -242,12 +246,12 @@ a:link {
   margin-bottom: 9px;
 }
 
-.foot-data:hover,
-.foot-data:focus {
-  color: rgba(255, 255, 255, 0.6);
+.footer-data:hover,
+.footer-data:focus {
+  color: var(--link-color);
 }
 
-.foot-data {
+.footer-data {
   color: white;
 }
 
@@ -472,6 +476,21 @@ button[type='button'] {
   margin-right: 93px;
   margin-top: 24px;
   margin-bottom: 25px;
+}
+
+.menu-item-one:hover,
+.menu-item-one:focus {
+  color: var(--link-color);
+}
+
+.menu-item-one:hover .menu-color,
+.menu-item-one:focus .menu-color {
+ color: var(--link-color);
+}
+
+.menu-color:hover,
+.menu-color:focus {
+  color: var(--link-color);
 }
 
 .menu-item-two {
