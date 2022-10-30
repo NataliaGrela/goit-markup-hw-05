@@ -59,7 +59,7 @@
     <main class="container">
       <div class="main-title title-color size-color">
         <h1 class="main-title">EFEKTYWNE ROZWIĄZANIA <br> DLA WASZEGO BIZNESU</h1>
-        <button type="button" class="box-first">Zamów usługę</button>
+        <button type="button" class="box-first" data-modal-open>Zamów usługę</button>
       </div>
 
       <div class="section-lorem-list">
@@ -119,30 +119,36 @@
         <h2 class="name-color second-title">Czym się zajmujemy</h2>
 
         <ul class="photo-first-page">
-          <li>
-            <img class="img"
+          <li class="photo-first-page-competition">
+            <img class="photo-first-page-data"
               src="./images/index_img/klawiatura.jpg"
               alt="dłonie na klawiaturze"
               width="370"
               height="294"
             />
+            <p class="photo-first-page-box">Aplikacje komputerowe</p>
           </li>
-          <li>
-            <img
+
+          <li class="photo-first-page-competition">
+            <img class="photo-first-page-data"
               src="./images/index_img/telefon.jpg"
               alt="telefon w dłoni"
               width="370"
               height="294"
             />
+              <p class="photo-first-page-box">Aplikacje mobilne</p>
           </li>
-          <li>
-            <img
+
+          <li class="photo-first-page-competition">
+            <img class="photo-first-page-data"
               src="./images/index_img/tablet.jpg"
               alt="tablet w dłoni"
               width="370"
               height="294"
             />
+            <p class="photo-first-page-box">Rozwiązania graficzne</p>
           </li>
+
         </ul>
         </div>
 
@@ -371,6 +377,12 @@
     </div>
       </address>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close><svg class="modal-colse-button-x" height="11" width="11"><use href="./images/icons.svg#icon-Vector"></use></svg></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 
